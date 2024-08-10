@@ -1,0 +1,36 @@
+import random
+import re
+
+class MedicalEthicsChatbot:
+    def __init__(self):
+        self.ethical_guidelines = self.load_guidelines()
+
+    def load_guidelines(self):
+        # Load ethical guidelines from a database or file
+        return {
+            "informed_consent": "Informed consent must be obtained from all participants...",
+            "data_privacy": "Patient data must be kept confidential and secure...",
+            # Add more guidelines here
+        }
+
+    def get_response(self, user_input):
+        user_input = user_input.lower()
+        if "consent" in user_input:
+            return self.ethical_guidelines["informed_consent"]
+        elif "data" in user_input:
+            return self.ethical_guidelines["data_privacy"]
+        else:
+            return "I'm sorry, I don't have information on that. Please consult a medical ethics expert."
+
+    def start_chat(self):
+        print("Welcome to the Medical Ethics Chatbot!")
+        while True:
+            user_input = input("You: ")
+            if user_input.lower() in ["exit", "quit"]:
+                break
+            response = self.get_response(user_input)
+            print(f"Chatbot: {response}")
+
+if __name__ == "__main__":
+    bot = MedicalEthicsChatbot()
+    bot.start_chat()
