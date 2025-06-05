@@ -1,0 +1,26 @@
+[
+  {
+    "keywords": ["consent", "informed consent"],
+    "response": "Informed consent must be obtained from all participants before medical treatment or research. They should understand the purpose, risks, and benefits of the procedure."
+  },
+  {
+    "keywords": ["data", "privacy", "confidential"],
+    "response": "Patient data must remain confidential and secure. Only authorized personnel should access personal medical information."
+  },
+  {
+    "keywords": ["nonmaleficence", "harm"],
+    "response": "Non-maleficence requires avoiding unnecessary harm. Consider potential harms and benefits before proceeding with treatment." 
+  },
+  {
+    "keywords": ["beneficence", "well-being"],
+    "response": "Beneficence obligates professionals to act in the patient's best interest and promote their well-being."
+  },
+  {
+    "keywords": ["autonomy", "self-determination"],
+    "response": "Respect for autonomy means patients have the right to make decisions about their own health care."
+  },
+  {
+    "keywords": ["justice", "fairness"],
+    "response": "Justice requires that health resources are distributed fairly and without discrimination." 
+  }
+]
